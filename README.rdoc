@@ -1,0 +1,17 @@
+= Color polyfill
+
+This is a polyfill for implementing the HTML5 <tt><input type="color"></tt> element in browsers that do not currently support it.
+
+== Usage
+
+Using it is easy — simply include the +color-polyfill.js+ file in the HEAD of the HTML page. You can then use <tt><input type="color"></tt> elements normally.
+
+If Modernizr detects that the browser doesn't support <tt><input type="color"></tt>, the script will replace these elements with a JavaScript-powered color picker dialog.
+
+A default CSS file is provided. You may edit this file to style the buttons and dialog box to make them look the way you want.
+
+If Modernizr detects support for CSS transitions, you will be able to animate the opening and closing of the dialog box by writing a CSS transition in the CSS file. Otherwise, a jQuery animation is used.
+
+== Dependencies
+
+This script requires jQuery[http://jquery.com/], jQuery UI[http://jqueryui.com/], and Modernizr[http://www.modernizr.com/].
